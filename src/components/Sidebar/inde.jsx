@@ -12,7 +12,10 @@ const activeStyle = 'text-white-50'
 
 const item = items.map((item) => {
     return (
-        <li className='font-Red_Hat font-medium text-whiteTransparent '>
+        <li
+            className='font-Red_Hat font-medium text-whiteTransparent '
+            key={item}
+        >
             <NavLink
                 to={`/${item}`}
                 className={({ isActive }) => isActive ? activeStyle : undefined}
