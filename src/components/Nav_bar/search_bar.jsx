@@ -3,13 +3,13 @@ import * as f_a_icons from 'react-icons/fa'
 const Search_bar = () => {
     return (
         <>
-            <div className="w-full h-14 bg-white-100 p-2 ">
-                <div className="w-full h-10 flex py-1  justify-center">
+            <div className="w-full h-10 bg-white-100 p-2 flex items-center rounded-lg ml-5">
+                <div className="w-full h-5 flex items-center  justify-center">
                     <f_a_icons.FaSearch className='m-2'></f_a_icons.FaSearch>
                     <input 
                         type="text" 
                         placeholder="Buscar por libros, personas ó articulos"
-                        className='rounded-lg w-full p-2 bg-white-100 border-none border-spacing-0'
+                        className='rounded-lg w-full p-2 bg-white-100'
                     />
                 </div>
             </div>

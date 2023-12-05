@@ -25,12 +25,12 @@ const Profile = ({url}) => {
     return (
         <>
             {datos ? (
-                <div className="flex gap-5 w-48 mt-5 justify-center items-center">
+                <div className="flex gap-5 w-full mr-3 justify-end items-center">
 
-                    <div className="font-Red_Hat  items-center" >{datos.name}</div>
-                    <div className="relative w-16 h-16">
+                    <div className="font-Red_Hat items-center" >{datos.name}</div>
+                    <div className="relative w-16 h-16 flex items-center">
                         <img
-                            className="absolute w-full h-full object-cover rounded-lg"
+                            className="absolute w-10 h-10  object-cover rounded-lg"
                             src={datos.image}
                         />
                     </div>
