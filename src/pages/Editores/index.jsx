@@ -1,6 +1,6 @@
 import Side_bar from "../../components/Sidebar/inde";
 
-const Home = () => {
+const Editores = () => {
     return (
         <>
             <Side_bar/>
@@ -8,4 +8,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Editores;
