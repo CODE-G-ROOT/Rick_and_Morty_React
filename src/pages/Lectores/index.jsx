@@ -1,4 +1,4 @@
-import Side_bar from "../../components/Sidebar/inde";
+import Side_bar from "../../components/Sidebar/Sidebar";
 
 const Lectores = () => {
     return (
