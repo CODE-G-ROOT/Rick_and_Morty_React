@@ -1,6 +1,7 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom';
 import {NextUIProvider} from "@nextui-org/react";
 
+
 //? Pages
 import Home from '../Inicio/index.jsx';
 import Editores from '../Editores/index.jsx';

@@ -1,3 +1,5 @@
+import React from "react";
+
 import NavBar from "../../components/Nav_bar/Nav_bar";
 import Side_bar from "../../components/Sidebar/Sidebar";
 import Card from "../../components/Card/Card";
@@ -17,6 +19,7 @@ const personaje2 = "https://rickandmortyapi.com/api/character/2";
 const personaje3 = "https://rickandmortyapi.com/api/character/3";
 const personaje4 = "https://rickandmortyapi.com/api/character/4";
 
+// import '../src/pages/app/App.css'
 
 //* esta variable se hizo con el objeto de "simular" el consumo de la api, 
 //* dado que la consumida no contiene imagenes para las ubicaciones
@@ -41,20 +44,20 @@ const Home = () => {
                         <NavBar url={personaje}></NavBar>
 
                         {/* CUERPO Y PANEL "LO ÚLTIMO"*/}
-                        <div className="w-full h-full flex overflow-y-scroll overflow-x-hidden">
+                        <div className="w-full h-full flex overflow-y-scroll overflow-x-hidden mka">
                             <div className="w-3/4 h-full flex flex-col">
 
-                                <div className=" p-5 flex flex-col h-full w-full justify-between ">
+                                <div className=" py-5 px-6 flex flex-col h-full w-full justify-between ">
                                     {/* BANNER */}
                                     <div className="relative h-2/5 w-100">
                                         <Banner color="bg-secundario" img={imgs_banner[0]} >
                                             <div className="flex flex-col gap-2">
-                                                <div>
+                                                <div className="text-lg">
                                                     <p>Vuelve tus libros tendencia mundial!</p>
                                                     <p>¿Quieres empezar a escribir una vez más?</p>
                                                 </div>
 
-                                                <div className="w-4/12 h-auto bg-terciario flex justify-center gap-5 px-3 py-1 rounded-xl items-center">
+                                                <div className="w-4/12 h-auto bg-terciario flex justify-center gap-5 px-3 py-1 rounded-xl items-center ">
                                                     <p>Crear Borrador </p>
                                                     <span className="font-extrabold text-3xl">+</span>
                                                 </div>
@@ -66,7 +69,7 @@ const Home = () => {
                                     </div>
 
                                     {/* CONTADORES, AUTORES Y RECIENTES */}
-                                    <div className="w-full h-3/5 flex py-5 gap-2">
+                                    <div className="w-full h-3/5 flex py-5 gap-2 font-Red_Hat">
                                         {/* CONTADORES, AUTORES */}
                                         <div className="h-full w-full px-5 flex flex-col justify-between gap-10">
                                             {/* CONTADORES */}
@@ -76,14 +79,14 @@ const Home = () => {
 
                                             {/* AUTORES */}
                                             <div className="w-full h-[71%] mb-5">
-                                                <div className="w-full h-full flex flex-col px-5 pb-3 pt-6 justify-between gap-4 bg-terciario/5 rounded-3xl">
+                                                <div className="w-full h-full flex flex-col px-5 pb-3 pt-6 justify-between gap-4 bg-gray-100/50 shadow-lg rounded-3xl">
 
                                                     <div className="flex h-1/6 justify-between ">
-                                                        <div className="text-3xl">Autores</div>
+                                                        <div className="text-3xl font-medium">Autores</div>
                                                         <Button></Button>
                                                     </div>
 
-                                                    <div className="divide-y-2 h-5/6 overflow-auto ">
+                                                    <div className="divide-y-2 h-5/6 overflow-auto">
                                                         <Author url={api}></Author>
                                                     </div>
 
@@ -94,9 +97,9 @@ const Home = () => {
                                         </div>
 
                                         {/* RECIENTE */}
-                                        <div className="relative h-full w-full px-5 bg-terciario/5 shadow-lg shadow-gray-200/10 rounded-3xl">
+                                        <div className="relative h-full w-full px-5 bg-gray-100/50 shadow-lg rounded-3xl " >
                                             <div className="w-full h-1/5 flex justify-between py-5 ">
-                                                <h3 className="text-3xl">Reciente</h3>
+                                                <h3 className="text-3xl font-medium">Reciente</h3>
                                                 <Button></Button>
                                             </div>
                                             <div className="absolute w-full h-4/5 divide-gray-200 divide-y-2 px-6 left-0 top-16 overflow-hidden overflow-y-auto">
@@ -106,17 +109,15 @@ const Home = () => {
                                     </div>
 
                                     {/* BANNER */}
-                                    <div className="relative h-full w-full pb-4">
+                                    <div className="relative h-full w-full pb-4 font-Red_Hat">
                                         <Banner color="bg-terciario" img={imgs_banner[0]} >
-                                            <div className="flex flex-col gap-2">
+                                            <div className="flex flex-col font-Red_Hat">
                                                 <div>
-                                                    <p>Vuelve tus libros tendencia mundial!</p>
-                                                    <p>¿Quieres empezar a escribir una vez más?</p>
-                                                </div>
-
-                                                <div className="w-4/12 h-auto bg-terciario flex justify-center gap-5 px-3 py-1 rounded-xl items-center">
-                                                    <p>Crear Borrador </p>
-                                                    <span className="font-extrabold text-3xl">+</span>
+                                                    <ul className="text-lg font-light">
+                                                        <li>1.Lee los comentarios de tus clientes</li>
+                                                        <li>2.Elige el género que quieres para tu trabajo</li>
+                                                        <li>3.Busca siempre a un editor de confianza</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </Banner>
@@ -135,7 +136,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 };

@@ -10,6 +10,10 @@ const Search_bar = () => {
                         type="text" 
                         placeholder="Buscar por libros, personas ó articulos"
                         className='rounded-lg w-full p-2 bg-gray-100'
+                        style={{
+                            border: "none",
+                            outline: "none"
+                        }}
                     />
                 </div>
             </div>

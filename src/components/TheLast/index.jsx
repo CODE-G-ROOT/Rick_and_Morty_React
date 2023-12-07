@@ -10,7 +10,7 @@ const icono = <SlArrowRight />;
 const TheLast = ({ location, personaje, image }) => {
     return (
         <>
-            <div className="fixed h-screen p-5 mr-3 flex flex-col content-end bg-terciario/5 rounded-l-3xl">
+            <div className="fixed h-screen p-5 mr-3 flex flex-col content-end shadow-lg shadow-terciario/30 bg-terciario/5 rounded-l-3xl">
                 <div className=" flex justify-between mb-5">
                     <div className="w-full">
                         <h2 className="text-3xl">

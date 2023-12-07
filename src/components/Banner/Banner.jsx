@@ -1,7 +1,7 @@
 const Banner = ({ color, img, children }) => {
     return (
         <>
-            <div className={`${color} flex justify-between rounded-3xl`}>
+            <div className={`${color} flex justify-between rounded-3xl font-Red_Hat font-medium `}>
                 <div className="px-14 pt-10 pb-8 text-white-50 w-2/3 flex flex-col justify-between">
                     <h1 className="text-3xl leading-tight font-normal">
                         Andrés nos gusta tu contenido y nos gustaría darte los siguientes tips

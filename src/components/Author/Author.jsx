@@ -42,8 +42,8 @@ const Author = ({ url }) => {
                                         <div className="flex justify-start items-center">
                                             <span className=" text-base opacity-40">{element.status}</span>
                                         </div>
-                                        <div className="flex justify-end items-center">
-                                            <div className="text-3xl">{element.id}</div>
+                                        <div className="flex justify-end items-center font-medium">
+                                            <div className="text-3xl">{element.id + " " + "k"}</div>
                                         </div>
                                     </div>
                                 </div>
