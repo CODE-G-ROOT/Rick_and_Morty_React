@@ -29,6 +29,9 @@ const imgs = [
     "../../../public/presaber11.svg"
 ];
 
+
+// esto de debe poner en el App, 
+//! NO PUEDE QUEDAR POR AHÍ VOLANDO!!!
 const Banner = () => {
     return (
         <>
@@ -37,12 +40,18 @@ const Banner = () => {
                 img={imgs[0]}
                 className=""
             >
+
+                añlskdfjaslkdf
             </Background_banner>
+
+
             <Background_banner
                 color={colors_bg[2]}
                 img={imgs[1]}
                 className=""
             >
+
+                <button className="bg-white-50">asdfasdf</button>
             </Background_banner>
         </>
     )

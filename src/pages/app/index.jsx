@@ -17,7 +17,7 @@ const AppRoutes = () => {
         { path: '/editores', element: <Editores /> },
         { path: '/lectores', element: <Lectores /> },
         { path: '/libros', element: <Libros /> },
-        { path: '/*', element: <NotFound /> }
+        { path: '/*', element: <NotFound/> }
     ]);
 
     return routes;

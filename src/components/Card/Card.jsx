@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 
 
-const Card = ({ personaje, location, img }) => {
+const Card = ({ personaje, location, image }) => {
     const [datos, setDatos] = useState(null);
 
     useEffect(() => {
@@ -26,24 +26,20 @@ const Card = ({ personaje, location, img }) => {
 
     return (
         <>
-            <div className="w-[18rem] h-[20rem] rounded-xl bg-white-50">
+            <div className="w-full h-full rounded-3xl bg-[#fff] shadow-lg shadow-gray-400/60">
                 <div className="h-1/2 w-full rounded-xl">
-                    {img ? (
-                        <img
+                    <img
                         className="object-cover w-full rounded-xl"
-                        src={img}
+                        src={image}
                     />
-                    ) : (
-                        <div>Cargando ...</div>
-                    )}
                 </div>
 
-                <div className="h-1/2 w-full px-3 flex flex-col justify-start ">
-                    <div className="h-1/2 w-full mt-3 ">
+                <div className="h-1/2 w-full pl-5 py-3 flex flex-col justify-start ">
+                    <div className="h-1/2 w-full  ">
                         {datos ? (
                             <>
-                                <h2 className=" text-lg font-medium">{datos.name}</h2>
-                                <p className="text-sm opacity-50 ">
+                                <h2 className=" text-lg font-medium mb-2 opacity-80">{datos.name}</h2>
+                                <p className="text-sm opacity-50 mb-2">
                                     {datos.dimension}
                                 </p>
                             </>
