@@ -2,8 +2,6 @@ import React from "react";
 
 import NavBar from "../../components/Nav_bar/Nav_bar";
 import Side_bar from "../../components/Sidebar/Sidebar";
-import Card from "../../components/Card/Card";
-import Card_profile from "../../components/Card/Card_profile";
 import Banner from "../../components/Banner/Banner";
 import Block_Card from "../../components/Card/Bloque_Card";
 import Author from "../../components/Author/Author";
@@ -15,14 +13,6 @@ import TheLast from "../../components/TheLast";
 const location = "https://rickandmortyapi.com/api/location/1";
 const api = "https://rickandmortyapi.com/api/character";
 const personaje = "https://rickandmortyapi.com/api/character/1";
-const personaje2 = "https://rickandmortyapi.com/api/character/2";
-const personaje3 = "https://rickandmortyapi.com/api/character/3";
-const personaje4 = "https://rickandmortyapi.com/api/character/4";
-
-// import '../src/pages/app/App.css'
-
-//* esta variable se hizo con el objeto de "simular" el consumo de la api, 
-//* dado que la consumida no contiene imagenes para las ubicaciones
 
 const image = "https://get.wallhere.com/photo/illustration-planet-space-Earth-cartoon-atmosphere-Rick-and-Morty-universe-astronomy-Adult-Swim-screenshot-atmosphere-of-earth-outer-space-astronomical-object-105144.png";
 
