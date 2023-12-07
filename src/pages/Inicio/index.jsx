@@ -13,6 +13,7 @@ const location = "https://rickandmortyapi.com/api/location/1";
 const personaje = "https://rickandmortyapi.com/api/character/1";
 const personaje2 = "https://rickandmortyapi.com/api/character/2";
 const personaje3 = "https://rickandmortyapi.com/api/character/3";
+const personaje4 = "https://rickandmortyapi.com/api/character/4";
 
 
 //* esta variable se hizo con el objeto de "simular" el consumo de la api, 
@@ -38,8 +39,10 @@ const Home = () => {
 
                         <div className="w-full h-full flex">
                             <div className="w-3/4 h-full">
-                                <div className="p-5 flex flex-col h-full w-full">
-                                    <div className="h-1/5 w-100">
+
+
+                                <div className="p-5 flex flex-col h-full w-full justify-between">
+                                    <div className="h-2/5 w-100">
                                         <Banner color="bg-secundario" img={imgs_banner[0]} >
                                             <div className="flex flex-col gap-2">
                                                 <div>
@@ -53,12 +56,37 @@ const Home = () => {
                                                 </div>
                                             </div>
                                         </Banner>
+
+
+
                                     </div>
-                                    {/* <div className="h-3/5 w-100">
+
+                                    <div className="w-full h-full flex">
+
+                                        <div className="h-2/3 w-2/3 px-5 flex flex-col">
+                                            <div className="w-full h-auto flex justify-center my-5">
+                                                <Block_Card></Block_Card>
+                                            </div>
+
+                                            <div className="w-full h-1/12 box-border flex flex-col py-3 px-5 bg-terciario/5 shadow-lg shadow-gray-200/10 rounded-3xl">
+
+                                                <div className="flex justify-between mb-4">
+                                                    <div className="text-3xl">Autores</div>
+                                                    <div>Button</div>
+                                                </div>
+
+                                                <div className="divide-y-2">
+                                                    <Author url={personaje2}></Author>
+                                                    <Author url={personaje3}></Author>
+                                                    <Author url={personaje4}></Author>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div className="h-full w-1/3 bg-secundario"></div>
                                     </div>
-                                    <div className="h-1/5 w-100">
-                                        <Banner color="bg-terciario" img={imgs_banner[1]} />
-                                    </div> */}
+
                                 </div>
 
                             </div>
@@ -67,18 +95,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
-
-                {/* <div className="bg-[#fff] w-3/12 h-[5rem] m-1 divide-white-300 divide-y-1">
-                    <Author url={personaje} />
-                    <Author url={personaje2} />
-                    <Author url={personaje3} />
-                </div> */}
-
-                {/* <Recient></Recient> */}
             </div>
         </>
     );

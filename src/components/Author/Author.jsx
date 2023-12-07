@@ -21,11 +21,11 @@ const Author = ({ url }) => {
         <>
             {datos ? (
                 <>
-                    <div  className="w-full h-full flex justify-between ">
-                        <div className="w-2/3 flex justify-start gap-5">
+                    <div  className="w-full py-2 flex justify-between ">
+                        <div className="w-2/3 flex justify-start">
                             <div className="w-1/5 h-full flex justify-start items-center">
                                 <img
-                                    className="object-cover w-[4rem] h-[4rem] rounded-2xl"
+                                    className="object-cover w-[3rem] h-[3rem] rounded-2xl"
                                     src={datos.image}
                                 />
                             </div>
@@ -35,7 +35,7 @@ const Author = ({ url }) => {
                             </div>
                         </div >
 
-                        <div className="h-full flex justify-end">
+                        <div className="h-full flex justify-end mr-5">
                             <div className="flex gap-3 items-center">
                                 <div className="flex justify-start">
                                     <span className=" text-base opacity-40">{datos.status}</span>

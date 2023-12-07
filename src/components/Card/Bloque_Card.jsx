@@ -9,10 +9,10 @@ const Block_card_component = ({ data }) => {
     return (
         <>
             {Object.keys(data).map((key) => (
-                <div className="rounded-2xl h-[6rem] w-[7rem] flex flex-col gap-3 bg-[fff] shadow-xl p-4 border-solid border-1.5 border-gray-500">
+                <div className="rounded-2xl h-[6rem] w-[7rem] flex flex-col gap-3 bg-[fff] shadow-xl p-4 border-solid border-1.5 border-gray-500 justify-around">
                     <ul className="w-full h-full flex flex-col justify-between items-start">
                         <li key={key} className="opacity-50">{`${key}`}</li>
-                        <li key={key} className="font-medium text-2xl">{`${data[key]}`}</li>
+                        <li key={key+1} className="font-medium text-2xl">{`${data[key]}`}</li>
                     </ul>
                 </div>
             ))}
@@ -24,7 +24,7 @@ const Block_card_component = ({ data }) => {
 const Block_Card = () => {
     return (
         <>
-            <div className="flex gap-5">
+            <div className="flex gap-10">
                 <Block_card_component data={estadisticas}></Block_card_component>
             </div>
         </>
