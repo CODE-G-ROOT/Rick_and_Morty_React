@@ -30,7 +30,7 @@ const Side_bar = () => {
 
     return (
         <>
-            <div className="w-2/12 h-full flex flex-col justify-around items-center">
+            <div className=" w-2/12 h-full flex flex-col justify-around items-center">
                 <div className='flex justify-center items-center w-16 h-16 rounded-lg bg-primario_transparet shadow-lg shadow-cyan-500/50 '>
                     <f_a_icons.FaBook className='book_icon w-10 h-10 z-10' />
                 </div>
