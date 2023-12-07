@@ -31,7 +31,7 @@ const Recient = ({ url }) => {
                     <>
                         {
                             datos.map((element, key) => (
-                                <div className="w-full h-[5rem] flex items-center ">
+                                <div className="w-full h-[5rem] flex items-center " key={key}>
                                     <div className="w-3/5 mx-1 my-2">
                                         <span className="text-lg font-medium  " key={key} >{element.name}</span>
                                         <p className="text-lg font-light">
