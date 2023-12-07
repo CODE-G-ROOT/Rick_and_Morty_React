@@ -6,6 +6,7 @@ import Banner from "../../components/Banner/Banner";
 import Block_Card from "../../components/Card/Bloque_Card";
 import Author from "../../components/Author/Author";
 import Recient from "../../components/Recient/Recient";
+import Button from "../../components/Button/button";
 
 import TheLast from "../../components/TheLast";
 
@@ -39,7 +40,7 @@ const Home = () => {
                         <NavBar url={personaje}></NavBar>
 
                         {/* CUERPO Y PANEL "LO ÚLTIMO"*/}
-                        <div className="w-full h-full flex ">
+                        <div className="w-full h-full flex overflow-y-scroll overflow-x-hidden">
                             <div className="w-3/4 h-full flex flex-col">
 
                                 <div className=" p-5 flex flex-col h-full w-full justify-between ">
@@ -92,7 +93,7 @@ const Home = () => {
                                         </div>
 
                                         {/* RECIENTE */}
-                                        <div className="relative h-full w-full px-5 bg-terciario/5 shadow-lg shadow-gray-200/10 rounded-3xl">
+                                        <div className="relative h-full w-full px-5 bg-terciario/5 shadow-lg shadow-gray-200/10 rounded-3xl overflow-y-scroll">
                                             <div className="w-full h-1/5 flex justify-between p-5 ">
                                                 <h3 className="text-3xl">Reciente</h3>
                                                 <span>asñldfjk</span>
@@ -109,8 +110,8 @@ const Home = () => {
                                     </div>
 
                                     {/* BANNER */}
-                                    <div className="relative h-full w-full">
-                                        <Banner color="bg-secundario" img={imgs_banner[0]} >
+                                    <div className="relative h-full w-full pb-4">
+                                        <Banner color="bg-terciario" img={imgs_banner[0]} >
                                             <div className="flex flex-col gap-2">
                                                 <div>
                                                     <p>Vuelve tus libros tendencia mundial!</p>
@@ -129,7 +130,7 @@ const Home = () => {
                             </div>
 
                             {/* PANEL "LO ÚLTIMO" */}
-                            <div className="w-1/4 h-full flex flex-col bg-terciario/5 rounded-l-3xl shadow-xl shadow-gray-500/40">
+                            <div className="w-1/4 h-screen flex flex-col bg-terciario/5 rounded-l-3xl shadow-xl shadow-gray-500/40">
                                 <TheLast location={location} personaje={personaje} image={image}></TheLast>
                             </div>
                         </div>

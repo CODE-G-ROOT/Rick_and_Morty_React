@@ -1,8 +1,9 @@
-import Side_bar from "../../components/Sidebar/Sidebar";
+import Button from "../../components/Button/button";
 
 const Editores = () => {
     return (
         <>
+        <Button/>
         </>
     );
 };
