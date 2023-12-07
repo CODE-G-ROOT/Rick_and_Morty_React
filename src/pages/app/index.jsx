@@ -15,10 +15,10 @@ import NotFound from '../../components/Error/NotFound.jsx';
 const AppRoutes = () => {
     let routes = useRoutes([
         { path: '/inicio', element: <Home /> },
-        { path: '/editores', element: <Editores /> },
-        { path: '/lectores', element: <Lectores /> },
-        { path: '/libros', element: <Libros /> },
-        { path: '/*', element: <NotFound/> }
+        { path: '/editores', element: <Home /> },
+        { path: '/lectores', element: <Home /> },
+        { path: '/libros', element: <Home /> },
+        { path: '/*', element: <Home/> }
     ]);
 
     return routes;
