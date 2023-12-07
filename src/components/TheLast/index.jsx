@@ -3,21 +3,22 @@ const info = ["reciente", "popular"]
 import IconoPersonalizado from "../Nav_bar/icons";
 import Card from "../Card/Card";
 import { SlArrowRight } from "react-icons/sl";
+import Button from "../Button/button";
 
 const icono = <SlArrowRight />;
 
 const TheLast = ({ location, personaje, image }) => {
     return (
         <>
-            <div className="h-full w-full p-5 flex flex-col content-end ">
-                <div className="flex justify-between mb-5">
+            <div className="fixed h-screen p-5 mr-3 flex flex-col content-end bg-terciario/5 rounded-l-3xl">
+                <div className=" flex justify-between mb-5">
                     <div className="w-full">
                         <h2 className="text-3xl">
                             Lo último
                         </h2>
                     </div>
                     <div>
-                        <button>asdfasdf</button>
+                    <Button/>
                     </div>
                 </div>
 

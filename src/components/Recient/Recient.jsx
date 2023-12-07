@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Recient = ({ url, action }) => {
+const Recient = ({ url }) => {
 
 
     const [datos, setDatos] = useState(null);
@@ -10,7 +10,7 @@ const Recient = ({ url, action }) => {
             try {
                 const res = await fetch(url)
                 const data = await res.json();
-                setDatos(data);
+                setDatos(data.results);
 
             } catch (error) {
                 console.error({
@@ -28,20 +28,26 @@ const Recient = ({ url, action }) => {
     return (
         <>
             {datos ? (
-                <div className="w-full h-[5rem] flex items-center ">
-                    <div className="w-3/5 mx-1 my-2">
-                        <span className="text-lg" >{datos.name}</span>
-                        <p className="text-xs">
-                            ha {action} tu publicación
-                        </p>
-                    </div>
+                    <>
+                        {
+                            datos.map((element, key) => (
+                                <div className="w-full h-[5rem] flex items-center ">
+                                    <div className="w-3/5 mx-1 my-2">
+                                        <span className="text-lg" key={key} >{element.name}</span>
+                                        <p className="text-xs">
+                                            ha comentado tu publicación
+                                        </p>
+                                    </div>
 
-                    <div className="w-2/5 flex justify-center">
-                        <div>
-                            {datos.created.slice(5,10)}
-                        </div>
-                    </div>
-                </div>
+                                    <div className="w-2/5 flex justify-center">
+                                        <div>
+                                            {element.created.slice(5, 10)}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </>
             ) : (
                 <p>Cargando datos...</p>
             )}

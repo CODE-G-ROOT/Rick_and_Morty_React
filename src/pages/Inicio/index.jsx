@@ -11,6 +11,7 @@ import Button from "../../components/Button/button";
 import TheLast from "../../components/TheLast";
 
 const location = "https://rickandmortyapi.com/api/location/1";
+const api = "https://rickandmortyapi.com/api/character";
 const personaje = "https://rickandmortyapi.com/api/character/1";
 const personaje2 = "https://rickandmortyapi.com/api/character/2";
 const personaje3 = "https://rickandmortyapi.com/api/character/3";
@@ -65,46 +66,41 @@ const Home = () => {
                                     </div>
 
                                     {/* CONTADORES, AUTORES Y RECIENTES */}
-                                    <div className="w-full h-3/5 flex py-5">
+                                    <div className="w-full h-3/5 flex py-5 gap-2">
                                         {/* CONTADORES, AUTORES */}
-                                        <div className="h-5/6 w-2/3 px-5 flex flex-col">
+                                        <div className="h-full w-full px-5 flex flex-col justify-between gap-10">
                                             {/* CONTADORES */}
-                                            <div className="w-full h-auto flex justify-center mb-5">
+                                            <div className="w-full h-1/6 flex justify-center mb-5">
                                                 <Block_Card></Block_Card>
                                             </div>
 
                                             {/* AUTORES */}
-                                            <div className="w-full h-2/12 box-border flex flex-col px-5 pb-3 pt-6 bg-terciario/5 shadow-lg shadow-gray-200/10 rounded-3xl">
+                                            <div className="w-full h-[71%] mb-5">
+                                                <div className="w-full h-full flex flex-col px-5 pb-3 pt-6 justify-between gap-4 bg-terciario/5 rounded-3xl">
 
-                                                <div className="flex justify-between ">
-                                                    <div className="text-3xl">Autores</div>
-                                                    <div>Button</div>
+                                                    <div className="flex h-1/6 justify-between ">
+                                                        <div className="text-3xl">Autores</div>
+                                                        <Button></Button>
+                                                    </div>
+
+                                                    <div className="divide-y-2 h-5/6 overflow-auto ">
+                                                        <Author url={api}></Author>
+                                                    </div>
+
                                                 </div>
-
-                                                <div className="divide-y-2">
-                                                    <Author url={personaje2}></Author>
-                                                    <Author url={personaje3}></Author>
-                                                    <Author url={personaje4}></Author>
-                                                </div>
-
                                             </div>
 
 
                                         </div>
 
                                         {/* RECIENTE */}
-                                        <div className="relative h-full w-full px-5 bg-terciario/5 shadow-lg shadow-gray-200/10 rounded-3xl overflow-y-scroll">
-                                            <div className="w-full h-1/5 flex justify-between p-5 ">
+                                        <div className="relative h-full w-full px-5 bg-terciario/5 shadow-lg shadow-gray-200/10 rounded-3xl">
+                                            <div className="w-full h-1/5 flex justify-between py-5 ">
                                                 <h3 className="text-3xl">Reciente</h3>
-                                                <span>asñldfjk</span>
+                                                <Button></Button>
                                             </div>
-                                            <div className="absolute w-full h-4/5 divide-gray-200 divide-y-2 px-6 left-0 top-16 overflow-hidden">
-                                                <Recient url={personaje4 + "1"} action="comentado" />
-                                                <Recient url={personaje2 + "5"} action="reaccionado a" />
-                                                <Recient url={personaje3 + "12"} action="compartido " />
-                                                <Recient url={personaje3 + "2"} action="comentado " />
-                                                <Recient url={personaje3 + "22"} action="comentado " />
-                                                <Recient url={personaje3 + "22"} action="comentado " />
+                                            <div className="absolute w-full h-4/5 divide-gray-200 divide-y-2 px-6 left-0 top-16 overflow-hidden overflow-y-auto">
+                                                <Recient url={api} action="comentado" />
                                             </div>
                                         </div>
                                     </div>
@@ -129,10 +125,13 @@ const Home = () => {
 
                             </div>
 
+
                             {/* PANEL "LO ÚLTIMO" */}
-                            <div className="w-1/4 h-screen flex flex-col bg-terciario/5 rounded-l-3xl shadow-xl shadow-gray-500/40">
+                            {/* */}
+                            <div className="h-screen w-1/4 ">
                                 <TheLast location={location} personaje={personaje} image={image}></TheLast>
                             </div>
+
                         </div>
                     </div>
                 </div>
