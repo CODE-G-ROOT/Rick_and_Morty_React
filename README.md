@@ -4,12 +4,12 @@ Este es el primer repositorio donde intento contruir algo con react. Hay que ten
 
 En este proyecto se usó, React.js, Tailwind y la API de Rick and Morty
 
-Comandos para correr la app
-<code>
+Comandos para correr la app: <br>
+```
 npm install
 npm run start
 npm run dev
-</code>
+```
 
 La aplicación de por si no tiene ninguna utilidad, sin embargo tiene implementado el enrutamiento con <code>useRoutes</code>, por ende es neceario ubicarse en la ruta <code>/inicio</code> que sería el "home" de esta.
 
