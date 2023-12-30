@@ -1,8 +1,10 @@
-# React + Vite
+## Primer Intento de Maquetación con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el primer repositorio donde intento contruir algo con react. Hay que tener en cuenta que este projecto era una "Prueba Tecnica" la cual fallé por falta de conocimientos. Esta prueba se realizó con un tiempo de 2 dias. Dejo esto aquí como prueba de mi evolución...
 
-Currently, two official plugins are available:
+En este proyecto se usó, React.js, Tailwind y la API de Rick and Morty
+Aquí está el link del codespaces. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> [!WARNING]
+> La pagina no es responsive, por ende, toca reducir el zoom de la ventada para observar bien como está construida
+
