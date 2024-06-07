@@ -11,10 +11,9 @@ import AuthorsBlock from "../../components/Author/Author";
 const location = "https://rickandmortyapi.com/api/location/1";
 const api = "https://rickandmortyapi.com/api/character";
 const personaje = "https://rickandmortyapi.com/api/character/1";
-const image =
-	"https://get.wallhere.com/photo/illustration-planet-space-Earth-cartoon-atmosphere-Rick-and-Morty-universe-astronomy-Adult-Swim-screenshot-atmosphere-of-earth-outer-space-astronomical-object-105144.png";
-const ImageBannerPeach = "../public/open_book.svg";
-const ImageBannerGray = "../public/reading_book.svg";
+const image = "https://get.wallhere.com/photo/illustration-planet-space-Earth-cartoon-atmosphere-Rick-and-Morty-universe-astronomy-Adult-Swim-screenshot-atmosphere-of-earth-outer-space-astronomical-object-105144.png";
+const ImageBannerPeach = require.context("../public/open_book.svg");
+const ImageBannerGray = require.context("../public/reading_book.svg");
 
 
 const InfoContainer = () => (
